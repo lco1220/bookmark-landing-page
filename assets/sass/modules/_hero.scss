@@ -35,27 +35,6 @@
   grid-template-columns: repeat(2, 165px);
   grid-column-gap: 15px;
 
-  .hero__button {
-    background-color: hsl(228, 26%, 93%);
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    padding: 10px 15px;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    font-weight: 500;
-  }
-
-  .hero__button--blue {
-    background-color: $soft-blue;
-    border: 1px solid $soft-blue;
-  }
-
-  .hero__button--white {
-    color: $very-dark-blue;
-    border: 1px solid hsl(228, 26%, 93%);
-  }
-
 }
 
 .hero__image {

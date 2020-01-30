@@ -19,6 +19,7 @@ body {
   font-family: $primary-font;
   font-size: 10px;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 ul {
@@ -51,4 +52,26 @@ p {
 
 .main {
   grid-area: main;
+}
+
+.button {
+  background-color: hsl(228, 26%, 93%);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+
+.button--blue {
+  background-color: $soft-blue;
+  border: 1px solid $soft-blue;
+}
+
+.button--white {
+  color: $very-dark-blue;
+  border: 1px solid hsl(228, 26%, 93%);
 }
