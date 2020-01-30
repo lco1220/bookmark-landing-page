@@ -1,0 +1,84 @@
+@import 'variables';
+
+.extensions {
+  padding: 10em 0;
+  margin: 0 15em;
+}
+
+.extension__content {
+  width: 50%;
+  margin: 0 auto 7em;
+  text-align: center;
+
+  .extension__content__h3 {
+    color: $very-dark-blue;
+  }
+
+  .extension__content__p {
+    color: $grayish-blue;
+    line-height: 1.6;
+  }
+
+}
+
+.extension__browsers {
+  height: 40em;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.browsers__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3.5em;
+
+  height: 100%;
+
+  .browser__card {
+    padding: 2em 0;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+
+    height: 35em;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px -4px rgb(219, 219, 219);
+  }
+
+  .browser__card--center {
+    align-self: center;
+  }
+
+  .browser__card--end {
+    align-self: end;
+  }
+
+}
+
+.browser__image {
+  margin-bottom: 2.5em;
+}
+
+.browser__content {
+  text-align: center;
+
+  .browser__content__h4 {
+    color: $very-dark-blue;
+    margin-bottom: 0.5em;
+  }
+
+  .browser__content__p {
+    color: $grayish-blue;
+  }
+
+}
+
+.browser__dots {
+  margin: 2.5em 0;
+}
+
+.browser__button {
+  box-shadow: 0px 5px 10px -4px rgb(201, 201, 201), 
+              inset 1px 5px 1px -4px $soft-blue;
+  height: auto;
+}

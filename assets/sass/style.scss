@@ -1,6 +1,7 @@
 @import 'modules/header';
 @import 'modules/hero';
 @import 'modules/features';
+@import 'modules/dowload';
 @import 'modules/variables';
 
 * {
@@ -28,6 +29,11 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8em;
 }
 
 h3 {
@@ -67,8 +73,17 @@ p {
 
 
 .button--blue {
+  box-shadow: 0px 5px 10px -4px rgb(201, 201, 201);
   background-color: $soft-blue;
   border: 1px solid $soft-blue;
+
+  &:hover {
+    box-shadow: 0px 5px 10px -4px rgb(201, 201, 201);
+    border: 1px solid $soft-blue;
+    background-color: #fff;
+    color: $soft-blue;
+  }
+
 }
 
 .button--white {

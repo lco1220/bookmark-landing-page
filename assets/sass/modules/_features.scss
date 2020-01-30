@@ -6,7 +6,7 @@
 
 .feature__content {
   width: 35%;
-  margin: 0 auto 50px;
+  margin: 0 auto 5em;
   text-align: center;
 
   .feature__content__h3 {
@@ -21,7 +21,7 @@
 }
 
 .feature__items {
-  margin: 0 140px;
+  margin: 0 15em;
 }
 
 .feature__links {
@@ -61,14 +61,14 @@
 
 .feature__item {
   display: none;
-  padding: 70px 0;
+  padding: 7em 0;
 
   &.feature__item--active {
     display: block;
     .feature__grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 100px;
+      grid-column-gap: 9em;
     }
 
   }
@@ -83,17 +83,16 @@
     z-index: 1;
 
     .feature__image{
-      margin-left: 40px;
       height: 75%;
-      width: 90%;
+      width: 100%;
     }
 
     &::after {
       content: "";
       height: 100%;
       width: 100%;
-      bottom: -100px;
-      left: -140px;
+      bottom: -10em;
+      left: -15em;
       background-color: $soft-blue;
       position: absolute;
       border-top-right-radius: 50%;
