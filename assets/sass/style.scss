@@ -2,6 +2,7 @@
 @import 'modules/hero';
 @import 'modules/features';
 @import 'modules/dowload';
+@import 'modules/question';
 @import 'modules/variables';
 
 * {
@@ -65,8 +66,9 @@ p {
   border: none;
   color: #fff;
   cursor: pointer;
-  padding: 10px 15px;
+  padding: 1em 1.5em;
   border-radius: 4px;
+  font-family: $primary-font;
   font-size: 0.8rem;
   font-weight: 500;
 }

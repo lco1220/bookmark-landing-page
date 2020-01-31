@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap");
 .header {
   grid-area: header;
   grid-row: 1 / 2;
@@ -220,6 +221,78 @@
   box-shadow: 0px 5px 10px -4px #c9c9c9, inset 1px 5px 1px -4px #5368df;
   height: auto; }
 
+.questions {
+  padding: 10em 0;
+  margin: 0 15em; }
+  .questions .question__grid {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 3em;
+    justify-items: center; }
+
+.question__content {
+  width: 50%;
+  margin: 0 auto 2em;
+  text-align: center; }
+  .question__content .question__content__h3 {
+    color: #252b46; }
+  .question__content .question__content__p {
+    color: #9194a1;
+    line-height: 1.6;
+    letter-spacing: 1px; }
+
+.question__accordions {
+  width: 50%;
+  margin-bottom: 1em; }
+  .question__accordions .accordions__grid {
+    display: grid; }
+
+.accordion__button {
+  cursor: pointer;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid #d8dae3;
+  background-color: transparent;
+  padding: 1.2em 0.9em 1.2em 0em;
+  color: #3e4870;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 35px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  transition: 0.4s; }
+  .accordion__button:first-of-type {
+    border-top: 1px solid #d8dae3; }
+  .accordion__button:hover {
+    color: #fa5757; }
+  .accordion__button::after {
+    content: url(/images/icon-arrow.svg);
+    transition: transform 350ms ease-in; }
+
+.accordion__button--active {
+  border-bottom: none; }
+  .accordion__button--active::after {
+    content: url(/images/icon-arrow.-red.svg);
+    transform: rotate(-180deg); }
+
+.accordion__panel {
+  display: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 4s ease-out; }
+
+.accordion__panel--active {
+  display: block;
+  max-height: 100%; }
+  .accordion__panel--active .accordion__panel__p {
+    padding: 0.9em 0.2em;
+    font-size: 0.95rem;
+    color: #252b46;
+    line-height: 35px;
+    letter-spacing: 0.35px; }
+
 * {
   padding: 0;
   margin: 0;
@@ -268,8 +341,9 @@ p {
   border: none;
   color: #fff;
   cursor: pointer;
-  padding: 10px 15px;
+  padding: 1em 1.5em;
   border-radius: 4px;
+  font-family: "Rubik", sans-serif;
   font-size: 0.8rem;
   font-weight: 500; }
 
