@@ -33,6 +33,13 @@
   color: $very-dark-blue;
   font-size: .8rem;
   text-transform: uppercase;
+  transition: color 250ms ease-in;
+  letter-spacing: 1px;
+
+  &:hover {
+    color: $soft-red;
+  }
+
 }
 
 .header__nav__list_button {
