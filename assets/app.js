@@ -1,6 +1,46 @@
 const feature__link = document.querySelectorAll('.feature__link');
 const feature__items = document.querySelectorAll('.feature__item');
 const questions__btn = document.querySelectorAll('.accordion__button');
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+let input;
+
+// Show input message
+function showMessage(input, alert ,message) {
+  // console.log(input.parentElement.parentElement)
+  const input__parent = input.parentElement.parentElement;
+  input__parent.className = `form__input--${alert}`;
+  const small = input__parent.querySelector('small');
+  small.textContent = message;
+
+  setTimeout(
+    function remove__color(){
+    input__parent.classList.remove(`form__input--${alert}`);
+    small.textContent = "";
+  }, 5000);
+
+  setTimeout( 
+    function() {
+      input.value = "";
+    }, 10000
+  );
+
+}
+
+// Check email is valid
+function checkEmail(input) {
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if (re.test(input.value.trim())) {
+    showMessage(input,'success','Valid email. Thank you!');
+  } else {
+    showMessage(input, 'error', 'Whoops, make sure it\'s an email');
+  }
+}
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  checkEmail(email);
+});
 
 feature__link.forEach(link => {
   link.addEventListener('click', e => {
