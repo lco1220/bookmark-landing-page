@@ -15,8 +15,8 @@
 
   <div class="container">
 
-    <header class="header container__grid">
-      <div class="header__inner">
+    <header class="header container__inner">
+      <div class="header__inner grid">
 
         <div class="header__logo">
           <img src="/images/logo-bookmark.svg" alt="Bookmark Logo" class="logo__img header__img">
@@ -25,7 +25,7 @@
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
-              <a href="#" class="link header__link">Home</a>
+              <a href="#" class="link header__link">Features</a>
             </li>
             <li class="header__item">
               <a href="#" class="link header__link">Pricing</a>
@@ -34,23 +34,234 @@
               <a href="#" class="link header__link">Contact</a>
             </li>
             <li class="header__item">
-              <a href="#" class="link header__link">Login</a>
+              <a href="#" class="link header__link button button--red">Login</a>
             </li>
           </ul>
         </nav>
 
         <nav class="header__nav--mobile">
-          
+
         </nav>
 
       </div>
     </header>
 
-    <main class="main container__grid">
+    <main class="main container__inner">
+
+      <section class="hero grid">
+        <div class="hero__content">
+          <h1 class="hero__h1">A Simple Bookmark Manager</h1>
+          <p class="hero__p">A clean and simple interface to organize your favourite websites. Open a new 
+            browser tab and see your sites load instantly. Try it for free.</p>
+          <div class="grid hero__buttons">
+            <a href="#" class="hero__button button button--blue">  Get it on Chrome</a>
+            <a href="#" class="hero__button button button--white">  Get it on Firefox</a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <figure class="hero__figure">
+            <img src="/images/illustration-hero.svg" alt="illustration hero" class="figure__img">
+          </figure>
+        </div>
+      </section>
+
+      <section class="feature grid">
+        <div class="feature__content grid">
+          <h2 class="feature__h2">Features</h2>
+          <p class="feature__p">Our aim is to make it quick and easy for you to access your favourite websites. 
+            Your bookmarks sync between your devices so you can access them on the go.</p>
+        </div>
+        <div class="feature__tabs grid">
+          <div class="feature__list">
+            <ul class="feature__links grid">
+              <li class="feature__link feature__link--active" id="simple">
+                Simple Bookmarking
+              </li>
+              <li class="feature__link" id="speedy">
+                Speedy Searching
+              </li>
+              <li class="feature__link" id="easy">
+                Easy Sharing
+              </li>
+            </ul>
+          </div>
+          <div class="feature__items">
+            <div id="simple-bookmarking" class="feature__item feature__item--active grid">
+              <div class="feature__image">
+                <figure class="feature__figure">
+                  <img src="/images/illustration-features-tab-1.svg" alt="tab 1 image" class="figure__img">
+                </figure>
+              </div>
+              <div class="grid feature__description">
+                <h2 class="feature__h2">Bookmark in one click</h2>
+                <p class="feature__p">
+                  Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
+                </p>
+                <button class="button button--blue feature__button">
+                  More Info
+                </button>
+              </div>
+            </div>
+            <div id="speedy-searching" class="feature__item grid">
+              <div class="feature__image">
+                <figure class="feature__figure">
+                  <img src="/images/illustration-features-tab-2.svg" alt="tab 2 image" class="figure__img">
+                </figure>
+              </div>
+              <div class="grid feature__description">
+                <h2 class="feature__h2">Intelligent search</h2>
+                <p class="feature__p">
+                  Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.
+                </p>
+                <button class="button button--blue feature__button">
+                  More Info
+                </button>
+              </div>
+            </div>
+            <div id="easy-sharing" class="feature__item grid">
+              <div class="feature__image">
+                <figure class="feature__figure">
+                  <img src="/images/illustration-features-tab-3.svg" alt="tab 3 image" class="figure__img">
+                </figure>
+              </div>
+              <div class="grid feature__description">
+                <h2 class="feature__h2">Share your bookmarks</h2>
+                <p class="feature__p">
+                  Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.
+                </p>
+                <button class="button button--blue feature__button">
+                  More Info
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="browser grid">
+        <div class="browser__content grid">
+          <h2 class="browser__h2">Download the extension</h2>
+          <p class="browser__p">
+            We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.
+          </p>
+        </div>
+        <div class="browser__cards grid">
+          <div class="grid browser__card browser__card--one">
+            <div class="card__img">
+              <figure class="card__figure">
+                <img src="/images/logo-chrome.svg" alt="chrome logo">
+              </figure>
+            </div>
+            <div class="card__content">
+              <h3 class="card__h3">
+                Add to Chrome
+              </h3>
+              <p class="card__p">
+                Minimum version 62
+              </p>
+            </div>
+            <div class="card__dots">
+              <img src="/images/bg-dots.svg" alt="border dots">
+            </div>
+            <div class="card__button">
+              <button class="button button--blue">Add & Install Extension</button>
+            </div>
+          </div>
+          <div class="grid browser__card browser__card--two">
+            <div class="card__img">
+              <figure class="card__figure">
+                <img src="/images/logo-firefox.svg" alt="chrome logo">
+              </figure>
+            </div>
+            <div class="card__content">
+              <h3 class="card__h3">
+                Add to Firefox
+              </h3>
+              <p class="card__p">
+                Minimum version 55
+              </p>
+            </div>
+            <div class="card__dots">
+              <img src="/images/bg-dots.svg" alt="border dots">
+            </div>
+            <div class="card__button">
+              <button class="button button--blue">Add & Install Extension</button>
+            </div>
+          </div>
+          <div class="grid browser__card browser__card--three">
+            <div class="card__img">
+              <figure class="card__figure">
+                <img src="/images/logo-opera.svg" alt="chrome logo">
+              </figure>
+            </div>
+            <div class="card__content">
+              <h3 class="card__h3">
+                Add to Opera
+              </h3>
+              <p class="card__p">
+                Minimum version 46
+              </p>
+            </div>
+            <div class="card__dots">
+              <img src="/images/bg-dots.svg" alt="border dots">
+            </div>
+            <div class="card__button">
+              <button class="button button--blue">Add & Install Extension</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="question grid">
+        <div class="grid question__content">
+          <h2 class="question__h2">Frequently Asked Questions</h2>
+          <p class="question__p">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+        </div>
+        <div class="question__accordions">
+          <div class="question__accordion">
+            <a href="#" class="accordion__button">What is Bookmark?</a>
+            <div class="accordion__content">
+              <p class="accordion__p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+              </p>
+            </div>
+          </div>
+          <div class="question__accordion">
+            <a href="#" class="accordion__button">  How can I request a new browser?</a>
+            <div class="accordion__content">
+              <p class="accordion__p">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+                Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+                ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+                Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+            </div>
+          </div>
+          <div class="question__accordion">
+            <a href="#" class="accordion__button">Is there a mobile app?</a>
+            <div class="accordion__content">
+              <p class="accordion__p">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+                urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+                sollicitudin ex et ultricies bibendum.</p>
+            </div>
+          </div>
+          <div class="question__accordion">
+            <a href="#" class="accordion__button">What about other Chromium browsers?</a>
+            <div class="accordion__content">
+              <p class="accordion__p">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+                vitae neque eget nisl gravida pellentesque non ut velit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="question__btn">
+          <button class="button button--blue">
+            More Info
+          </button>
+        </div>
+      </section>
 
     </main>
 
-    <footer class="footer container__grid">
+    <footer class="footer container__inner">
 
     </footer>
 
