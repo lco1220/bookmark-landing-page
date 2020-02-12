@@ -1,11 +1,22 @@
 const feature__link = document.querySelectorAll('.feature__link');
 const feature__items = document.querySelectorAll('.feature__item');
 const questions__btn = document.querySelectorAll('.accordion__button');
+const mobile__nav = document.getElementById('mobile__nav'); 
+const mobile__icon = document.getElementById('mobile__icon');
+const mobile__icon__close = document.getElementById('mobile__icon--close');
 const form = document.getElementById('form');
 const email = document.getElementById('email');
 let input;
 
 // console.log(email);
+
+mobile__icon__close.addEventListener('click', function() {
+  mobile__nav.classList.remove('header__nav__mobile--active')
+});
+
+mobile__icon.addEventListener('click', function() {
+  mobile__nav.classList.add('header__nav__mobile--active')
+});
 
 // Show input message
 function showMessage(input, alert ,message) {
@@ -19,7 +30,7 @@ function showMessage(input, alert ,message) {
     function remove__color(){
     input__parent.classList.remove(`form__validation--${alert}`);
     small.textContent = "";
-  }, 5000);
+  }, 8000);
 
   setTimeout( 
     function() {
@@ -36,7 +47,7 @@ function checkEmail(input) {
   if (re.test(input.value.trim())) {
     showMessage(input,'success','Valid email. Thank you!');
   }
-  else if (re.test(input.value.trim()) == " ") {
+  else if (input.value == "") {
     showMessage(input,'error', 'Enter valid email address');
   } else {
     showMessage(input, 'error', 'Whoops, make sure it\'s an email');

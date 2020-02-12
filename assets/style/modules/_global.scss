@@ -99,6 +99,12 @@ section {
   color: $very-dark-blue;
   text-transform: uppercase;
   letter-spacing: 1px;
+  transition: color 250ms ease-in;
+
+  &:hover {
+    color: $primary-soft-red;
+  }
+
 }
 
 .button {
