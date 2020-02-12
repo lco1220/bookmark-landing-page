@@ -973,6 +973,52 @@ section {
     width: 100%;
     max-width: 100%;
   }
+  .feature .feature__list .feature__links .feature__link {
+    cursor: pointer;
+    color: #9194a1;
+    font-size: 0.89rem;
+    padding: 1.5em 0;
+    border-bottom: 0.1em solid #9194a1;
+    -webkit-transition: all 350ms ease-in;
+    transition: all 350ms ease-in;
+  }
+  .feature .feature__list .feature__links .feature__link:hover {
+    color: #fa5757;
+  }
+  .feature .feature__list .feature__links .feature__link .feature__link__a {
+    color: inherit;
+    position: relative;
+    padding-bottom: 25px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  .feature .feature__list .feature__links .feature__link .feature__link__a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #fa5757;
+    height: 5px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  .feature .feature__list .feature__links .feature__link.feature__link--active {
+    color: #252b46;
+    border-bottom: 0.1em solid #9194a1;
+    border-radius: 1px;
+    padding-bottom: 17px;
+    -webkit-transition: border-bottom 550ms ease-in;
+    transition: border-bottom 550ms ease-in;
+  }
+  .feature .feature__list .feature__links .feature__link.feature__link--active .feature__link__a::after {
+    width: 100%;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
   .feature .feature__items {
     max-width: 100%;
   }
@@ -1015,9 +1061,9 @@ section {
   }
   .feature .feature__image .feature__figure::after {
     bottom: -30px;
-    left: calc((350px - 100vw));
+    left: calc((345px - 100vw));
     height: 80%;
-    width: 100%;
+    width: 80%;
   }
   .feature .feature__image .feature__figure .figure__img {
     max-height: 100%;
@@ -2017,7 +2063,11 @@ section {
             align-items: center;
     padding: 1.8em 0;
   }
+  .footer .footer__nav {
+    height: 25px;
+  }
   .footer .footer__list {
+    height: 100%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (100px)[3];

@@ -815,6 +815,64 @@
         text-align: center;
         width: 100%;
         max-width: 100%;
+
+        .feature__link {
+          cursor: pointer;
+          color: $grayish-blue;
+          font-size: 0.89rem;
+          padding: 1.5em 0;
+          border-bottom: 0.1em solid $grayish-blue;
+          transition: all 350ms ease-in;
+    
+          &:hover {
+            color: $primary-soft-red;
+          }
+    
+          .feature__link__a  {
+            color: inherit;
+            position: relative;
+            padding-bottom: 25px;
+            transition: all .5s;
+
+            &::after {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 0%;
+              content: '.';
+              color: transparent;
+              background: $primary-soft-red;
+              height: 5px;
+              transition: all .5s;
+            }
+
+          }
+
+          &.feature__link--active {
+            color: $very-dark-blue;
+            border-bottom: 0.1em solid $grayish-blue;
+            border-radius: 1px;
+            padding-bottom: 17px;
+            transition: border-bottom 550ms ease-in;
+
+            .feature__link__a {
+
+              &::after {
+                width: 100%;
+                transition: all .5s;
+              }
+              // border-bottom: 0.35em solid $primary-soft-red;
+              // border-radius: 1px;
+              // padding-bottom: 20px;
+            }
+
+          }
+
+
+    
+        }
     
       }
       
@@ -870,9 +928,9 @@
       
         &::after {
           bottom: -30px;
-          left: calc((350px - 100vw));
+          left: calc((345px - 100vw));
           height: 80%;
-          width: 100%;
+          width: 80%;
         }
 
         .figure__img {
@@ -2121,7 +2179,12 @@
       padding: 1.8em 0;
     }
   
+    .footer__nav {
+      height: 25px;
+    }
+
     .footer__list {
+      height: 100%;
       display: grid;
       grid-template-columns: repeat(3, 100px);
       align-items: center;
