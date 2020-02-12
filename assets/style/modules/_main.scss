@@ -1994,10 +1994,10 @@
           right: calc((1140px - 100vw));
           background-color: $primary-soft-blue;
           height: 75%;
-          width: 90%;
+          width: 45vw;
           z-index: -1;
-          border-top-left-radius: 30%;
-          border-bottom-left-radius: 30%;
+          border-top-left-radius: 110px;
+          border-bottom-left-radius: 110px;
         }
     
     
@@ -2077,21 +2077,6 @@
     .feature__items {
       position: relative;
 
-      &::after {
-        display: block;
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: -185px;
-        background-color: $primary-soft-blue;
-        height: 70%;
-        width: 50%;
-        z-index: -1;
-        border-top-right-radius: 30%;
-        border-bottom-right-radius: 30%;
-      }
-    
-
     }
 
     .feature__item {
@@ -2134,9 +2119,24 @@
         width: 100%;
         position: relative;
       
-        
+        &::after {
+          display: block;
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: -185px;
+          background-color: $primary-soft-blue;
+          height: 70%;
+          width: 40vw;
+          z-index: -1;
+          border-top-right-radius: 110px;
+          border-bottom-right-radius: 110px;
+        }
       
       }
+
+     
+    
     }
     
   

@@ -1917,10 +1917,10 @@ section {
     right: calc((1140px - 100vw));
     background-color: #5368df;
     height: 75%;
-    width: 90%;
+    width: 45vw;
     z-index: -1;
-    border-top-left-radius: 30%;
-    border-bottom-left-radius: 30%;
+    border-top-left-radius: 110px;
+    border-bottom-left-radius: 110px;
   }
   .feature {
     grid: "content" "tabs" / 1fr;
@@ -1985,19 +1985,6 @@ section {
   .feature .feature__items {
     position: relative;
   }
-  .feature .feature__items::after {
-    display: block;
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -185px;
-    background-color: #5368df;
-    height: 70%;
-    width: 50%;
-    z-index: -1;
-    border-top-right-radius: 30%;
-    border-bottom-right-radius: 30%;
-  }
   .feature .feature__item {
     display: none;
   }
@@ -2035,6 +2022,19 @@ section {
     height: 100%;
     width: 100%;
     position: relative;
+  }
+  .feature .feature__image .feature__figure::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -185px;
+    background-color: #5368df;
+    height: 70%;
+    width: 40vw;
+    z-index: -1;
+    border-top-right-radius: 110px;
+    border-bottom-right-radius: 110px;
   }
   .question .question__content {
     width: 42%;
