@@ -2036,6 +2036,10 @@ section {
     border-top-right-radius: 110px;
     border-bottom-right-radius: 110px;
   }
+  .browser .browser__content {
+    width: 45%;
+    margin: 20px auto;
+  }
   .question .question__content {
     width: 42%;
   }
